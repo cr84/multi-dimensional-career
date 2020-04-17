@@ -1,0 +1,70 @@
+Fixed Income Fundamentals
+
+1. Coupon
+2. Payment Frequency
+3. Cash Flow
+4. Present Value of Money
+5. Nominal Yield (Coupon)
+6. Current Yield
+7. Yield To Maturity (YTM) aka Yield
+8. Cash Flow Discounting (Discount Factor)
+8. Bond being traded > At Par / At Discount / At Premium
+
+9. Weighted Average Life (WAL)
+
+10. Maculay's Duration
+11. Duration
+12. Convexity
+
+Pricing a bond :
+
+1. $ Price_Today-> Yield(YTM) derivation
+2. Yield (YTM) -> $ Price_Today derivation
+3. Price derivation based on a Spread:
+A Spread
+J Spread
+I Spread
+N Spread
+Z Spread
+
+Fundamentals of Yield Curve (taking US Govt Tsy as example)
+
+1. What is Yield Curve
+2. Par Curve
+3. Spot Curve aka Zero Curve
+4. Forward Curve
+>>> How Par , Spot , Fwd can be derived from each other
+
+Fundamentals of Building Yield Curve to price FI instruments
+
+1. As Risk Free instrument for building Curve why TSY is not used
+--- Liquidity of instruments 
+--- Instead Interest Rate Swaps (IRSwaps) are used
+
+>>> Interest Rate Swaps IRSwap (Fixed Leg , Floating Leg )
+
+
+2. Fundamentaly Yield curve has 2 components:
+
+----- Forward Rate Curve - for cash flow projections
+----- Discounting Curve - for cash flow Discountin
+
+Industry standard till Global Financial Crisis (GFC) :
+- Same curve LIBOR_3M was used for Forward Rate and also Discounting Cash Flow.
+
+During GFC : new behavior pattenrs were observed 
+
+>>>> Spread between LIBOR vs OIS (Overnight Index Swap)
+>>>> Tenor basis swap 3m6m (0m->6m : Libor6m  is not more : 0->3Libor_3M + Libor3M_Fwd_3m->6m)  
+>>>>>>>> concept of 3m6m (0m->6m : Libor6m approx to 0->3Libor_3M + Libor3M_Fwd_3m->6m + Spread)
+
+3. Post GFC , New Multi-Curve concept emerged
+
+---- Discounting : in theory - you can have more than 1 discounting curve , but mostly only 1 is used
+>>>> OIS is used for cash flow discounting
+
+---- Forward Rate : there is no 1 projected forward rate curve , as there will be multiple forward curves
+LIBOR_1M fwd rate curve , LIBOR_3M fwd rate curve , LIBOR_6M fwd rate curve, ......
+>>>> Mostly LIBOR_3M is used in USD market
+>>>> Fwd rates for LIBOR_1M (LIBOR_6M) are adjusted using tenor basis swaps 1m3m (3m6m)
+
